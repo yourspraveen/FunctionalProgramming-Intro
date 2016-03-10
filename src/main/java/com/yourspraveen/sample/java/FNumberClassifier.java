@@ -1,4 +1,4 @@
-package com.sample.java;
+package com.yourspraveen.sample.java;
 
 import fj.F;
 import fj.data.List;

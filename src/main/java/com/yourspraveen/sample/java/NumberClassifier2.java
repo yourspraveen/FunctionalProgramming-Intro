@@ -1,4 +1,4 @@
-package com.sample.java;
+package com.yourspraveen.sample.java;
 
 import java.util.HashSet;
 import java.util.Iterator;

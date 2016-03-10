@@ -1,4 +1,4 @@
-package com.sample.java;
+package com.yourspraveen.sample.java;
 
 
 public class InvalidNumberException extends Exception {
