@@ -17,4 +17,18 @@ object SNumberClassifier {
 
   def isDeficient(number: Int) =
     factors(number).sum - number < number
+
+
+  def validate(input:String, dbSelect:(String) => String): Unit ={
+
+
+    dbSelect(input)
+  }
+
+  def dbSelect(queryparam:String):String={
+
+""
+  }
 }
+
+
