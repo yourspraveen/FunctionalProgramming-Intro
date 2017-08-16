@@ -1,25 +1,27 @@
 object Functions {
 
-  def add(a: Int, b: Int): Int = {
-    a + b
-  }
+  def add(a: Int, b: Int): Int = a+b
 
-  def multiply(a: Int, b: Int): Int = {
-    a * b
-  }
+  def multiply(a: Int, b: Int): Int = a * b
 
+  def square(a: Int):Int = multiply(a,a)
+
+  //Curry
   def add5 = add(5, _: Int)
-
   def double = multiply(2, _: Int)
 
-  //def square(a:Int) = multiply(a,a)
+  //First order function
+  val mySquare: (Int) => Int = square
 
-  def useHigherOrderFunction(a: Int, double: Int => Int): Unit = {
-    print(double(a))
+  //Higher order function
+  def useHigherOrderFunction(input: Int, fn: Int => Int): Int = {
+    fn(input)
   }
 
   def main(args: Array[String]) {
-    useHigherOrderFunction(5, double)
+    println(mySquare(5))
+
+    println(useHigherOrderFunction(5, double))
   }
 
 }
