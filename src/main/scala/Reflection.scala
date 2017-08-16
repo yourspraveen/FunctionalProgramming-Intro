@@ -22,6 +22,8 @@ object Reflection {
     val names = theType.decls.map(symbol => symbol.fullName)
 
     println(theType.decls.head.asTerm.info)
+
+    println(theType.dealias.typeParams)
   }
 
 }
